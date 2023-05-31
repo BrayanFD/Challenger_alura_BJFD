@@ -1,0 +1,108 @@
+:root{
+    --color-verde: rgb(58, 212, 58);
+    --color-gris: gainsboro;
+
+}
+body {
+    background: #b2e0bc;
+    margin: 0%;     
+    font-family: 'Montserrat', sans-serif;
+    
+}
+header{
+    text-align: center;
+    margin: 5px;
+    color: #076e1ed9;
+
+}
+
+.main{
+    width: 85%;
+    margin: auto 40px auto auto;
+    display: grid;
+    grid-template-columns:  2fr 1fr;
+}
+
+.boxmensaje{
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.boxrespuesta{
+    background-color: rgb(226, 246, 226);
+    height: 670px;
+    border-radius: 32px;
+    padding: 32px 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+}
+#Texto_Encriptar{
+    width: 80%;
+    font-size: 32px;
+    color: var(--color-verde);
+    resize: none    ;
+    background: none;
+    border: none;
+    outline: none;
+
+}
+.mensaje,#Texto_respuesta{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(0, 182, 0);
+}
+#Texto_respuesta{
+    height: 100%;
+}
+#Texto_Encriptar::placeholder{
+    color:var(--color-verde);
+}
+.btn{
+    display: flex;
+    gap:24px;
+}
+#boton_Encriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border-color: green;
+    background-color: var(--color-verde);
+    color: white;
+    font-size: 16px;
+}
+#boton_desencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border-color: green;
+    background-color:var(--color-gris);
+    color: var(--color-verde);
+    font-size: 16px;
+}
+#boton_copiar{
+    width: 408px;
+    height: 117px;
+    border-radius: 24px;
+    border-color: green;
+    background-color: var(--color-verde);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+.boton:hover{
+    transition: 1s all;
+    transform: scale(1.1) ;
+
+
+}
+footer{
+    color: rgba(61, 107, 15, 0.585);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}

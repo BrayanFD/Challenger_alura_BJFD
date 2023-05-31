@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="estilos.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@200;300&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header >
+            <h1> Encriptador de mensajes </h1>
+        </header>
+        <main>
+            <div class="main">
+                <div class="boxmensaje">
+                    <textarea id="Texto_Encriptar" placeholder="Ingrese el texto aquí"></textarea>
+                       <div class="btnymensaje">
+                            <p>
+                                <img src="imagenes/peligro.png">
+                                Solo letras minusculas y sin acentos
+                            </p>
+                            <div class="btn">
+                                <button id="boton_Encriptar" class="boton">Encriptar</button>
+                                <button id="boton_desencriptar"  class="boton">Desencriptar</button>
+                            </div>
+                        </div>
+                </div>
+                <div class="boxrespuesta">
+
+                    <P class="mensaje">Mensaje encriptdo o desencriptado</P>
+                    <p id="Texto_respuesta"> Ningún mensaje fue encontrado</p>
+                    <button id="boton_copiar" class="boton">Copiar</button>
+                </div>
+            </div>    
+        </main>
+        <footer>
+            <p>
+                By Brayan Filot
+            </p>
+        </footer>
+        <script src="script.js"></script>
+
+    </body>
+
+
+
+</html>
